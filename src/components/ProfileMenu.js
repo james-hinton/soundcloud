@@ -1,0 +1,24 @@
+const ProfileMenu = () => {
+  const menuItems = [
+    "All",
+    "Popular tracks",
+    "Tracks",
+    "Albums",
+    "Playlists",
+    "Reposts",
+  ];
+
+  return (
+    <>
+    <div className="flex border-b-[1.1px] m-1 border-b-black-300">
+        {menuItems.map((item, index) => (
+            <div key={index} className="flex items-center px-5 py-3 ">
+                <h4 className="text-gray-800 font-semibold hover:font-bold">{item}</h4>
+            </div>
+        ))}
+        </div>
+    </>
+  );
+};
+
+export default ProfileMenu;
