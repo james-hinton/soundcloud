@@ -11,7 +11,7 @@ const Profile = () => {
       <img className="h-80 min-w-[1200px] object-cover" src={background}></img>
 
       {/* Profile image over background */}
-      <div className="absolute top-10 left-20  h-80 text-white flex">
+      <div className="absolute top-10 left-20 h-max text-white flex">
         {/* Profile image */}
 
         <img
@@ -27,7 +27,7 @@ const Profile = () => {
                 James Hinton
               </h3>
               <h6 className="bg-gray-900 w-max p-1 text-sm mb-2">
-                https://github.com/james-hinton
+                <a target="_blank" className="hover:font-bold hover:text-cyan-800" href="https://github.com/james-hinton">https://github.com/james-hinton</a>
               </h6>
               <h6 className="bg-gray-900 w-max p-1 text-sm">
                 Reading, England

@@ -1,7 +1,7 @@
 const Navbar = () => {
   return (
-    <div className="w-100 bg-sc-gray flex justify-center">
-      <div className="flex bg-sc-gray h-12 text-sm w-90">
+    <div className="bg-sc-gray flex justify-center min-w-[1200px]">
+      <div className="w-[100%] max-w-[1200px] w-[1200px] flex bg-sc-gray h-11 text-sm w-90 md:w-100">
         
         {/* Logo */}
         <div className="logo min-w-max ml-10">
@@ -11,15 +11,15 @@ const Navbar = () => {
         {/* Left Navigation Buttons */}
         {["Home", "Stream", "Library"].map((item, index) => (
           <div key={index} className="border-r-2 border-r-black px-10 py-3 ">
-            <h4 className="text-gray-300">{item}</h4>
+            <h4 className="text-gray-300 cursor-pointer hover:text-gray-100">{item}</h4>
           </div>
         ))}
 
         {/* Search box */}
-        <div className="flex-1 flex p-2 ">
-          <div className="relative">
+        <div className="flex-1 flex p-2 w-100 ">
+          <div className="relative w-[100%] ">
             <input
-              className="h-8 bg-gray-200  focus:outline-none focus:shadow-outline border border-black-300 rounded-lg py-2 px-4 block"
+              className="h-7 bg-gray-200 w-[100%] focus:outline-none focus:shadow-outline border border-black-300 rounded-lg py-2 px-4 block"
               type="text"
               placeholder="Search"
             />
@@ -42,7 +42,7 @@ const Navbar = () => {
               <h4 className="text-gray-300">{item.text}</h4>
             )}
             {item.dropdown ? (
-              <div className="absolute right-0 mt-2">--</div>
+              <div className="absolute right-0 mt-2"></div>
             ) : (
               <div></div>
             )}

@@ -11,8 +11,8 @@ const Songs = ({ tracks }) => {
         </div>
 
         {tracks.map((track, index) => (
-          <div className="p-6">
-            <Song key={index} track={track} large />
+          <div key={"track" + index} className="p-6">
+            <Song track={track} large />
           </div>
         ))}
       </div>

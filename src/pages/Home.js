@@ -10,7 +10,7 @@ const Home = () => {
     {
       title: "Skitz",
       song: "./skitz.mp3",
-      image: "./skitz.jfif",
+      image: "./skitz.jpg",
       description: "Drum & Bass",
     },
     {
@@ -22,7 +22,7 @@ const Home = () => {
   ]);
 
   return (
-    <div className=" bg-sc-background min-h-[100vh] bg-sc-background">
+    <div className=" bg-sc-background min-h-[100vh] bg-sc-background min-w-[1200px] ">
       <Navbar />
 
       <div className="flex justify-center  ">
