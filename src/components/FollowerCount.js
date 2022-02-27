@@ -4,8 +4,8 @@ import { titleCase } from "../utils/utils";
 const FollowerCount = ({tracks}) => {
 
   const [followerData, setFollowerData] = useState({
-    followers: Math.floor(Math.random() * 1000),
-    following: Math.floor(Math.random() * 1000),
+    followers: Math.floor(Math.random() * 1000 + 100),
+    following: Math.floor(Math.random() * 1000 + 100),
     tracks: tracks.length,
   });
 

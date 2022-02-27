@@ -8,16 +8,23 @@ import { useState } from "react";
 const Home = () => {
   const [tracks, setTracks] = useState([
     {
-      title: "Skitz",
-      song: "./skitz.mp3",
-      image: "./skitz.jpg",
+      title: "Discotation",
+      song: "./disco.mp3",
+      image: "./disco.jpg",
       description: "Drum & Bass",
+      artist: "James Hinton & Aidan Maskell"
     },
     {
       title: "Dream",
       song: "./dream.mp3",
       image: "./dream.jpg",
       description: "Jazzy song",
+    },
+    {
+      title: "Skitz",
+      song: "./skitz.mp3",
+      image: "./skitz.jpg",
+      description: "Drum & Bass",
     },
   ]);
 

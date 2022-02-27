@@ -35,9 +35,9 @@ const Navbar = () => {
           { image: "./mailbox.svg" },
           { image: "./more.svg" },
         ].map((item, index) => (
-          <div key={index} className=" px-4 py-3 flex items-center min-w-max hover:bg-gray-600 ">
+          <div key={index} className={"px-4 py-3 flex items-center min-w-max hover:bg-gray-600 "}>
             {item.image ? (
-              <img className="w-5 max-h-4 rounded-full object-contain" src={item.image} />
+              <img className={"w-5 max-h-4 object-contain" + (item.rounded===true && " rounded-full object-cover")} src={item.image} />
             ) : (
               <h4 className="text-gray-300">{item.text}</h4>
             )}
